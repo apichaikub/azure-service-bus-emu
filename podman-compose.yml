@@ -15,7 +15,7 @@ services:
     depends_on:
       - sqledge
     networks:
-      - public
+      - sb-emulator
 
   sqledge:
     container_name: sqledge
@@ -24,8 +24,7 @@ services:
       ACCEPT_EULA: "${ACCEPT_EULA}"
       MSSQL_SA_PASSWORD: "${MSSQL_SA_PASSWORD}"
     networks:
-      - public
+      - sb-emulator
 
 networks:
-  public:
-    external: true
+  sb-emulator:
