@@ -16,6 +16,7 @@ services:
       - sqledge
     networks:
       - sb-emulator
+    network_mode: "slirp4netns:allow_host_loopback=true"
 
   sqledge:
     container_name: sqledge
