@@ -2,4 +2,9 @@
 
 ## Usage
 
-1. Save the following script as `start.sh`
+Run:
+```
+chmod +x start.sh
+
+./start.sh
+```
